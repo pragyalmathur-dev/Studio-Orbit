@@ -305,10 +305,6 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialService }) => {
                   </a>
                 </div>
                 <div>
-                  <span className="block text-[#49756B]/60 mb-1">PRACTICE FOCUS</span>
-                  <span className="font-semibold">01 Branding · 02 Brand Transformation</span>
-                </div>
-                <div>
                   <span className="block text-[#49756B]/60 mb-1">STUDIO LOCATION</span>
                   <span>{STUDIO_CONFIG.location}</span>
                 </div>

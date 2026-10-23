@@ -91,7 +91,7 @@ export const STUDIO_CONFIG = {
   phone: '+91 85270 55370',
   phoneFormatted: '+91 85270 55370',
   phoneTel: '+918527055370',
-  location: 'Delhi, India & Global Commissions',
+  location: 'Delhi, India',
   instagram: 'https://instagram.com',
   linkedin: 'https://linkedin.com/company/studioorbit',
   copyrightYear: 2026,

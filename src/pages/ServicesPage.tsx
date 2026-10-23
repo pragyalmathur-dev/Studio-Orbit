@@ -22,7 +22,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
       <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-20">
         <div className="max-w-3xl">
           <span className="text-xs uppercase font-mono tracking-[0.2em] text-[#49756B]/70 font-semibold block mb-3">
-            Our Focus · Branding &amp; Brand Transformation
+            Our Focus
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#49756B] font-normal leading-[1.08] mb-6">
             Build something new.<br />

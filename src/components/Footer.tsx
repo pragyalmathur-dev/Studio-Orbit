@@ -31,9 +31,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onNavigateSection })
             <p className="text-sm text-[#49756B]/85 font-light max-w-md leading-relaxed">
               A branding and brand transformation studio. We create brands with a clear identity and help established businesses evolve through strategy, design, and digital experiences.
             </p>
-            <p className="text-xs text-[#49756B] font-mono tracking-wider pt-2 font-medium">
-              01 Branding · 02 Brand Transformation
-            </p>
           </div>
 
           {/* Quick Navigation */}
@@ -117,7 +114,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onNavigateSection })
             © {STUDIO_CONFIG.copyrightYear} {STUDIO_CONFIG.name}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <span>Branding &amp; Brand Transformation</span>
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="text-[#49756B] hover:underline transition-all flex items-center gap-1 cursor-pointer font-medium"

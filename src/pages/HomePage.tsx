@@ -145,9 +145,6 @@ export const HomePage: React.FC<HomePageProps> = ({
       <section id="our-focus" className="py-24 sm:py-32 bg-[#F0F5F0] border-y border-[#ACC7B8] scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="max-w-3xl mb-16">
-            <span className="text-xs uppercase font-mono tracking-[0.2em] text-[#49756B]/70 font-semibold block mb-3">
-              Our Two Core Offerings
-            </span>
             <h2 className="font-serif text-3xl sm:text-5xl text-[#49756B] font-normal leading-tight mb-4">
               Build something new. Move an existing brand forward.
             </h2>
