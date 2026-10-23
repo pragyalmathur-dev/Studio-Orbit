@@ -1,0 +1,8 @@
+{
+  "name": "StudioOrbit — Design-Led Marketing Studio & Strategic Branding Consultancy",
+  "description": "StudioOrbit is a branding and brand transformation studio. We create brands with a clear identity and help established businesses evolve through strategy, design, and digital experiences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
