@@ -327,7 +327,7 @@ export const SELECTED_PROJECTS: SelectedProject[] = [
     client: 'Be My Guest',
     category: 'Branding',
     label: 'Branding',
-    imageUrl: '/assets/homepage/services/bemyguestweddings.png',
+    imageUrl: '/assets/homepage/services/bemyguest.png',
     pdfUrl: '/assets/work/bemyguest.pdf',
     brandChallenge:
       'Articulating a distinctive, heirloom aesthetic for a luxury destination wedding planning house managing grand celebrations across the globe.',
