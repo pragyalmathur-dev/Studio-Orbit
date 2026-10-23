@@ -5,7 +5,6 @@ import {
   SELECTED_PROJECTS,
   STUDIO_CONFIG,
   CORE_OFFERINGS,
-  HOW_WE_WORK_STEPS,
   SelectedProject,
 } from '../data/studioContent';
 import {
@@ -214,46 +213,28 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
       </section>
 
-      {/* 4. OUR APPROACH (ABOUT US) */}
-      <section id="approach" className="relative py-24 sm:py-32 px-6 lg:px-12 max-w-7xl mx-auto scroll-mt-20 bg-[#F0F5F0]">
-        <div id="about" className="absolute -top-24 left-0" />
-        <div className="max-w-2xl mb-16">
-          <span className="text-xs uppercase font-mono tracking-[0.2em] text-[#49756B]/70 font-semibold block mb-2">
-            Our Approach
+      {/* 4. ABOUT US */}
+      <section
+        id="about"
+        className="relative py-24 sm:py-32 px-6 lg:px-12 max-w-7xl mx-auto scroll-mt-20 bg-[#F0F5F0]"
+      >
+        <div id="approach" className="absolute -top-24 left-0" />
+        <div className="max-w-4xl text-left">
+          <span className="text-xs uppercase font-mono tracking-[0.25em] text-[#49756B]/70 font-semibold block mb-8">
+            About Us
           </span>
-          <h2 className="font-serif text-3xl sm:text-5xl text-[#49756B] font-normal leading-tight mb-4">
-            From clarity to expression.
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[2.65rem] text-[#49756B] font-normal leading-[1.28] tracking-tight mb-10">
+            Studio Orbit is a design-forward creative studio focused on brand transformation, identity systems, and narrative motion design.
           </h2>
-          <p className="text-base text-[#49756B]/80 font-light leading-relaxed">
-            A compact, disciplined sequence that takes you from strategic alignment to a unified brand expression.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          {HOW_WE_WORK_STEPS.map((step) => (
-            <div
-              key={step.number}
-              className="bg-[#ACC7B8]/25 p-8 rounded-xl border border-[#ACC7B8] flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex items-center gap-2 mb-6">
-                  <span className="text-3xl font-serif text-[#49756B] font-normal">
-                    {step.number}
-                  </span>
-                  <span className="w-2 h-2 rounded-full bg-[#49756B] border border-[#49756B]" />
-                </div>
-                <h3 className="font-serif text-2xl text-[#49756B] mb-2">
-                  {step.name}
-                </h3>
-                <p className="text-xs font-mono text-[#49756B]/75 mb-4">
-                  {step.summary}
-                </p>
-                <p className="text-sm text-[#49756B]/85 leading-relaxed font-light">
-                  {step.description}
-                </p>
-              </div>
-            </div>
-          ))}
+          <div className="w-16 h-px bg-[#ACC7B8] mb-10" />
+          <div className="space-y-6 text-lg sm:text-xl text-[#49756B]/90 font-light leading-relaxed">
+            <p>
+              We believe a strong brand is built at the intersection of rigorous design discipline and compelling storytelling. We construct cohesive visual languages - from typography and brand systems to dynamic motion assets that translate a brand’s core purpose into a memorable visual world.
+            </p>
+            <p>
+              Design craft is our foundation. We integrate modern AI tools into our design workflow to expand our visual exploration, build custom motion assets, and push narrative boundaries.
+            </p>
+          </div>
         </div>
       </section>
 
