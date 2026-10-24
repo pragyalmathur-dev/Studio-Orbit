@@ -150,13 +150,41 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
     const primaryUrl = getProjectPdfUrl(project);
 
     // List of candidate URLs to test
-    const candidateUrls = [primaryUrl];
-    if (project.id === 'fiorella-flower-boutique') {
-      candidateUrls.push(
-        '/assets/work/fiorellatheflowerboutique.pdf',
-        '/assets/work/fiorellathefolwerboutique.pdf'
-      );
-    }
+    const cleanTitle = project.title.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const cleanId = project.id.replace(/-/g, '');
+
+    const candidateUrls = Array.from(new Set([
+      primaryUrl,
+      `/assets/work/${cleanTitle}.pdf`,
+      `/assets/work/${cleanId}.pdf`,
+      `/assets/work/${project.id}.pdf`,
+      ...(project.id === 'fiorella-flower-boutique'
+        ? [
+            '/assets/work/fiorellatheflowerboutique.pdf',
+            '/assets/work/fiorellathefolwerboutique.pdf',
+          ]
+        : []),
+      ...(project.id === 'norbu-the-montanna'
+        ? [
+            '/assets/work/norbuthemontanna.pdf',
+            '/assets/work/norbuthemontannaihclseleqtions.pdf',
+            '/assets/work/norbu.pdf',
+          ]
+        : []),
+      ...(project.id === 'salt-and-grey'
+        ? [
+            '/assets/work/saltandgrey.pdf',
+            '/assets/work/salt&grey.pdf',
+            '/assets/work/saltgrey.pdf',
+          ]
+        : []),
+      ...(project.id === 'jhalak-gems'
+        ? [
+            '/assets/work/jhalakgems.pdf',
+            '/assets/work/jhalak.pdf',
+          ]
+        : []),
+    ]));
 
     const loadDocument = async () => {
       setErrorState(null);

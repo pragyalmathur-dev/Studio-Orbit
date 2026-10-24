@@ -580,5 +580,204 @@ export const SELECTED_PROJECTS: SelectedProject[] = [
       },
     ],
   },
+
+  // 6. NORBU: THE MONTANNA (IHCL SELEQTIONS) (BRAND TRANSFORMATION)
+  {
+    id: 'norbu-the-montanna',
+    title: 'Norbu: The Montanna (IHCL Seleqtions)',
+    subtitle: 'Boutique Himalayan retreat branding, guest journey touchpoints, and IHCL Seleqtions luxury collateral system.',
+    client: 'IHCL Seleqtions & Norbu Hospitality',
+    category: 'Brand Transformation',
+    label: 'Brand Transformation',
+    imageUrl: '/assets/homepage/services/norbuthemontanna.png',
+    pdfUrl: '/assets/work/norbuthemontanna.pdf',
+    brandChallenge:
+      'Positioning a boutique mountain sanctuary in the Himalayas within the prestigious IHCL Seleqtions umbrella while preserving its intimate, soul-stirring Himalayan identity and distinct Tibetan-inspired heritage.',
+    whatChanged:
+      'We refined the retreat visual identity, designed tactile guest collateral, curated seasonal culinary campaign graphics, and harmonized IHCL brand standards with authentic local craftsmanship and mountain serenity.',
+    brief:
+      'Nestled in pristine mountain ridges, Norbu: The Montanna (IHCL Seleqtions) offers a bespoke sanctuary where traditional Himalayan architecture meets the warm, storied hospitality of IHCL.',
+    role: 'Brand strategy, identity refinement, tactile guest stationery, seasonal hospitality campaigns, and experiential print suites.',
+    whatWeBuilt:
+      'An elevated hospitality identity system incorporating copper-gold foil detailing, textured botanical stationery, seasonal dining menus, curated local excursion booklets, and bespoke guest room amenities.',
+    keyFeatures: [
+      'Tactile guest arrival suites with warm Himalayan welcomes and handwritten estate scrolls',
+      'Seasonal dining & Valentine curated campaign materials celebrating mountain gastronomy',
+      'Handcrafted room directory and nature trail compendiums highlighting indigenous flora and heritage trails',
+      'Cohesive brand alignment bridging IHCL luxury benchmarks with soulful boutique intimacy',
+    ],
+    results: 'Elevated brand perception among discerning luxury travelers and unified property collateral under IHCL Seleqtions standards.',
+    brandPortfolio: [
+      {
+        id: 'norbu-01',
+        title: 'Himalayan Guest Arrival & Welcome Collateral Suite',
+        discipline: 'Tactile Hospitality Design',
+        summary: 'Custom welcome letters, leather-bound keycard jackets, and hand-pressed botanical tea gift boxes for arriving guests.',
+        details: [
+          'Textured cotton cardstock with embossed gold foil crest',
+          'Hand-calligraphed welcome greetings and estate maps',
+          'Bespoke room amenity sleeves and botanical wellness labels',
+        ],
+        tag: 'Hospitality Stationery',
+      },
+      {
+        id: 'norbu-02',
+        title: 'The Montanna Culinary & Dining Menus',
+        discipline: 'Editorial & Print Design',
+        summary: 'Refined restaurant and deck dining menus showcasing local organic harvest and contemporary Himalayan gastronomy.',
+        details: [
+          'Hand-stitched linen menu folders with brass foil accents',
+          'Curated Valentine & festival seasonal dining collateral',
+          'Artisanal tea room tasting cards and cocktail narratives',
+        ],
+        tag: 'Editorial Print',
+      },
+      {
+        id: 'norbu-03',
+        title: 'Heritage Trail & Sanctuary Guidebooks',
+        discipline: 'Environmental & Publication Design',
+        summary: 'Pocket-sized naturalist guidebooks outlining bird watching routes, pine forest trails, and sacred mountain viewpoints.',
+        details: [
+          'Illustrated architectural elevations and topographic trail maps',
+          'Flora and fauna guides printed on recycled stone paper',
+          'In-room library compendium with local folklore',
+        ],
+        tag: 'Guest Experience',
+      },
+    ],
+  },
+
+  // 7. SALT & GREY (BRANDING)
+  {
+    id: 'salt-and-grey',
+    title: 'Salt & Grey',
+    subtitle: 'Contemporary ceramic atelier identity, tactile material storytelling, and minimal architectural packaging.',
+    client: 'Salt & Grey Studio',
+    category: 'Branding',
+    label: 'Branding',
+    imageUrl: '/assets/homepage/services/saltandgrey.png',
+    pdfUrl: '/assets/work/saltandgrey.pdf',
+    brandChallenge:
+      'Transforming a bespoke ceramic and architectural homeware workshop into a recognized minimalist lifestyle label that honors raw earth, handcrafted imperfection, and sculptural stillness.',
+    whatChanged:
+      'We crafted a serene visual identity built around tactile textures, understated typography, bespoke debossed stationery, and an editorial grid celebrating the tactile rhythm of clay, salt glaze, and mineral tone.',
+    brief:
+      'Salt & Grey creates functional ceramic sculptures, stoneware tableware, and architectural interior accents that celebrate texture, light, and quiet permanence.',
+    role: 'Brand identity, typographic architecture, packaging design, editorial social direction, and studio collateral.',
+    whatWeBuilt:
+      'A monolithic yet intimate visual language featuring blind debossed textured paper, unbleached cotton ribboning, stoneware care cards, and a minimalist digital archive layout.',
+    keyFeatures: [
+      'Blind-debossed identity suite on heavyweight cotton paper reflecting raw clay textures',
+      'Modular packaging system designed for safe transit of delicate ceramic heirlooms',
+      'Studio calendar and pottery editorial grid capturing hand-turned studio processes',
+      'Minimalist artist stamps and provenance certificates accompanying every bespoke piece',
+    ],
+    results: 'Established a recognized presence in interior design publications and sold out initial seasonal releases across boutique galleries.',
+    brandPortfolio: [
+      {
+        id: 'salt-01',
+        title: 'Atelier Packaging & Unboxing System',
+        discipline: 'Packaging & Structural Design',
+        summary: 'Sustainable kraft and unbleached greyboard boxes with bespoke die-cut inserts and blind-embossed studio seals.',
+        details: [
+          'FSC-certified recyclable boxes with mineral grey interior linings',
+          'Hand-torn handmade paper provenance cards with potter signature line',
+          'Custom woven organic cotton ribbon ties and wax seal stamps',
+        ],
+        tag: 'Sustainable Packaging',
+      },
+      {
+        id: 'salt-02',
+        title: 'Ceramic Provenance & Stoneware Care Guides',
+        discipline: 'Editorial Collateral',
+        summary: 'Tactile instruction cards explaining clay firing processes, food-safe glazes, and long-term stoneware preservation.',
+        details: [
+          'Letterpress printing on raw textured paper stock',
+          'Detailed care guide for high-temperature stoneware and microwave safety',
+          'Numbered batch cards for limited-edition kiln firings',
+        ],
+        tag: 'Print Craft',
+      },
+      {
+        id: 'salt-03',
+        title: 'Studio Grid & Material Storytelling System',
+        discipline: 'Art Direction & Digital Presence',
+        summary: 'A curated visual direction highlighting raw textures, natural light, hands at the wheel, and the architectural dialogue of pottery.',
+        details: [
+          'Muted natural palette inspired by sea salt, dry clay, and wet graphite',
+          'Art direction guidelines for product photography and gallery exhibitions',
+          'Minimalist digital catalog structure with generous negative space',
+        ],
+        tag: 'Art Direction',
+      },
+    ],
+  },
+
+  // 8. JHALAK GEMS (BRANDING)
+  {
+    id: 'jhalak-gems',
+    title: 'Jhalak Gems',
+    subtitle: 'High-jewelry gemstone curation, provenance storytelling, and heirloom velvet packaging suite.',
+    client: 'Jhalak Gems & Fine Jewelry',
+    category: 'Branding',
+    label: 'Branding',
+    imageUrl: '/assets/homepage/services/jhalakgems.png',
+    pdfUrl: '/assets/work/jhalakgems.pdf',
+    brandChallenge:
+      'Elevating a legacy gemstone dealer into a modern luxury high-jewelry house, conveying uncompromising gemological pedigree, rare stone provenance, and contemporary bespoke allure.',
+    whatChanged:
+      'We designed an authoritative identity system centered on classic high-contrast serif typography, deep jewel-toned velvet packaging, gemological provenance certificate folders, and refined gold-stamped stationery.',
+    brief:
+      'Jhalak Gems specializes in rare, ethically sourced colored gemstones—Burmese rubies, Colombian emeralds, and Ceylon sapphires—curated for discerning collectors and private bespoke jewelers.',
+    role: 'Complete brand architecture, visual identity, luxury packaging, certificate design, and collector collateral.',
+    whatWeBuilt:
+      'A timeless luxury ecosystem: deep forest green velvet presentation cases, gold-embossed gem certification folios, micro-detailed stone authenticity seals, and bespoke salon presentation trays.',
+    keyFeatures: [
+      'Bespoke gemstone certificate folder with security watermarking and gold foil crest',
+      'Rich velvet jewelry cases with custom-molded interior beds for rare individual cuts',
+      'Collector provenance books chronicling stone origin, cut geometry, and optical properties',
+      'Private viewing salon stationery, appointment cards, and gold-trimmed correspondence envelopes',
+    ],
+    results: 'Reinforced authority among international gem collectors and secured partnerships with prominent private luxury jewelry designers.',
+    brandPortfolio: [
+      {
+        id: 'jhalak-01',
+        title: 'Gemological Provenance & Certification Folios',
+        discipline: 'Luxury Document & Security Print',
+        summary: 'Rigid folios with blind debossing, gold foil detailing, and security paper to certify rare gemstone authenticity.',
+        details: [
+          'Heavyweight 400gsm cotton board with deep green velvet lining',
+          'Gold hot-stamped seal of authenticity and gemological grading grid',
+          'Custom translucent vellum overlays displaying gemstone optical schematics',
+        ],
+        tag: 'Certification Suite',
+      },
+      {
+        id: 'jhalak-02',
+        title: 'Heirloom Velvet Presentation Cases',
+        discipline: 'Structural Packaging',
+        summary: 'Custom handcrafted presentation boxes wrapped in plush forest green velvet with brushed brass hardware.',
+        details: [
+          'Precision-engineered interior cushions accommodating varied carats and cuts',
+          'Subtle debossed monogram on exterior lid with concealed magnetic closure',
+          'Complementary microfiber cleaning cloth and inspection loupe pouch',
+        ],
+        tag: 'Luxury Packaging',
+      },
+      {
+        id: 'jhalak-03',
+        title: 'Collector Salon Stationery & Private View Suites',
+        discipline: 'Corporate Identity & Collateral',
+        summary: 'Tactile stationery suite for private client viewing salons, including appointment cards, envelope seals, and ledger folios.',
+        details: [
+          'Gilt-edged correspondence cards with deep forest green engraved lettering',
+          'Custom die-cut gem inspection envelopes with peel-and-seal gold wax wafers',
+          'Private viewing presentation display mats crafted from Italian suede',
+        ],
+        tag: 'Client Collateral',
+      },
+    ],
+  },
 ];
+
 
