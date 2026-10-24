@@ -158,6 +158,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
       `/assets/work/${cleanTitle}.pdf`,
       `/assets/work/${cleanId}.pdf`,
       `/assets/work/${project.id}.pdf`,
+      ...(project.id === 'the-blue-kite-homes'
+        ? [
+            '/assets/work/thebluekite.pdf',
+            '/assets/work/thebluekie.pdf',
+            '/assets/work/thebluekiteholidayhomes.pdf',
+            '/assets/work/thebluekitehomes.pdf',
+          ]
+        : []),
       ...(project.id === 'fiorella-flower-boutique'
         ? [
             '/assets/work/fiorellatheflowerboutique.pdf',
