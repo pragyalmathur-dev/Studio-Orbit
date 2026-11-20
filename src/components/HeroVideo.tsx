@@ -174,8 +174,8 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
     <section
       ref={heroRef}
       id="hero"
-      aria-label="StudioOrbit hero presentation"
-      className="relative w-full min-h-[92vh] flex flex-col justify-center overflow-hidden bg-[#F0F5F0]"
+      aria-label="Imprint Studio hero presentation"
+      className="relative w-full min-h-[92vh] flex flex-col justify-center overflow-hidden bg-gradient-to-br from-[#F5EFE4] via-[#EDE3D0] to-[#E4D6BC]"
     >
       {/* BACKGROUND LAYER: HTML5 Video Element */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
@@ -194,34 +194,34 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
         />
       </div>
 
-      {/* GRADIENT OVERLAYS (Light & Subtle for full video visibility) */}
-      <div className="pointer-events-none absolute bottom-0 inset-x-0 z-10 h-24 bg-gradient-to-t from-[#F0F5F0] to-transparent" />
-      <div className="pointer-events-none absolute top-0 inset-x-0 z-10 h-20 bg-gradient-to-b from-[#F0F5F0]/60 to-transparent" />
+      {/* GRADIENT OVERLAYS (Soft Sand Beige atmospheric transition) */}
+      <div className="pointer-events-none absolute bottom-0 inset-x-0 z-10 h-28 bg-gradient-to-t from-[#FAF6EE] via-[#F5EFE4]/60 to-transparent" />
+      <div className="pointer-events-none absolute top-0 inset-x-0 z-10 h-24 bg-gradient-to-b from-[#FAF6EE]/55 via-[#F5EFE4]/25 to-transparent" />
 
-      {/* HERO CONTENT: Truly Translucent Glassmorphism Panel */}
+      {/* HERO CONTENT: Translucent Sand Beige Glassmorphism Panel */}
       <div className="relative z-20 px-6 md:px-12 lg:px-20 py-20 md:py-24 my-auto max-w-2xl lg:max-w-[40rem]">
-        <div className="relative backdrop-blur-md bg-[#F0F5F0]/35 border border-white/60 shadow-[0_8px_32px_0_rgba(73,117,107,0.08)] rounded-2xl sm:rounded-3xl p-7 sm:p-9 md:p-10 ring-1 ring-white/40 overflow-hidden">
+        <div className="relative backdrop-blur-md bg-gradient-to-br from-[#FAF6EE]/82 via-[#F5EFE4]/74 to-[#E8DCC4]/60 border border-[#FAF6EE]/80 shadow-[0_12px_36px_0_rgba(31,61,43,0.1)] rounded-2xl sm:rounded-3xl p-7 sm:p-9 md:p-10 ring-1 ring-[#1F3D2B]/8 overflow-hidden">
           {/* Subtle translucent glass sheen */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/10" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/45 via-transparent to-[#E8DCC4]/15" />
 
           <div className="relative z-10">
             {/* Eyebrow removed per user screenshot request */}
-            <h1 className="font-serif text-3xl sm:text-5xl md:text-[3.25rem] text-[#49756B] leading-[1.08] font-normal mb-5 tracking-tight">
+            <h1 className="font-serif text-3xl sm:text-5xl md:text-[3.25rem] text-[#1F3D2B] leading-[1.08] font-normal mb-5 tracking-tight">
               Build a brand.<br />
               Shape what comes next.
             </h1>
 
-            <p className="text-sm sm:text-base md:text-lg text-[#49756B]/90 font-light leading-relaxed mb-8 max-w-xl">
+            <p className="text-sm sm:text-base md:text-lg text-[#1F3D2B]/90 font-light leading-relaxed mb-8 max-w-xl">
               We create brands with a clear identity and help established businesses evolve through strategy, design, and digital experiences.
             </p>
 
             <div className="flex flex-wrap items-center gap-3.5">
               <button
                 onClick={onNavigateToWork}
-                className="px-6 py-3.5 text-xs sm:text-sm font-medium text-[#F0F5F0] bg-[#49756B] hover:bg-[#49756B]/90 rounded-md transition-all shadow-sm flex items-center gap-2 group cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#49756B]"
+                className="px-6 py-3.5 text-xs sm:text-sm font-medium text-[#FAF6EE] bg-[#1F3D2B] hover:bg-[#295039] rounded-md transition-all shadow-sm flex items-center gap-2 group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1F3D2B]"
               >
                 <span>View our work</span>
-                <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 text-[#F0F5F0]" />
+                <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 text-[#FAF6EE]" />
               </button>
             </div>
           </div>

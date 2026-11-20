@@ -14,6 +14,7 @@ export const Navigation: React.FC<NavigationProps> = ({
   onNavigateSection,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [logoError, setLogoError] = useState(false);
 
   const navItems = [
     { id: 'about', label: 'About Us', type: 'section' as const, target: 'about' },
@@ -45,17 +46,30 @@ export const Navigation: React.FC<NavigationProps> = ({
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 bg-[#F0F5F0]/92 border-b border-[#ACC7B8] text-[#49756B] backdrop-blur-md transition-colors">
+    <header className="fixed top-0 left-0 right-0 z-40 bg-gradient-to-r from-[#FAF6EE]/95 via-[#F5EFE4]/92 to-[#EFE6D6]/95 border-b border-[#1F3D2B]/15 text-[#1F3D2B] backdrop-blur-md transition-colors">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-16 sm:h-20 flex items-center justify-between">
-        {/* Zone 1: Wordmark */}
+        {/* Zone 1: Brand Logo */}
         <button
           onClick={() => {
             onNavigate('home');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="font-serif text-xl sm:text-2xl font-normal tracking-tight text-[#49756B] hover:opacity-80 transition-opacity text-left cursor-pointer whitespace-nowrap"
+          className="flex items-center hover:opacity-85 transition-opacity text-left cursor-pointer shrink-0"
+          aria-label={`${STUDIO_CONFIG.name} Home`}
         >
-          {STUDIO_CONFIG.name}
+          {!logoError ? (
+            <img
+              src="/assets/aistudio/Imprint_Studio_Forest_Green_Logo_7260e622.png"
+              alt={STUDIO_CONFIG.name}
+              referrerPolicy="no-referrer"
+              onError={() => setLogoError(true)}
+              className="h-11 sm:h-14 w-auto object-contain mix-blend-multiply select-none"
+            />
+          ) : (
+            <span className="font-serif text-xl sm:text-2xl font-normal tracking-tight text-[#1F3D2B] whitespace-nowrap">
+              {STUDIO_CONFIG.name}
+            </span>
+          )}
         </button>
 
         {/* Zone 2: Navigation Links */}
@@ -68,13 +82,13 @@ export const Navigation: React.FC<NavigationProps> = ({
                 onClick={() => handleItemClick(item)}
                 className={`transition-colors relative py-1 cursor-pointer whitespace-nowrap ${
                   isActive
-                    ? 'text-[#49756B] font-semibold'
-                    : 'text-[#49756B]/75 hover:text-[#49756B]'
+                    ? 'text-[#1F3D2B] font-semibold'
+                    : 'text-[#1F3D2B]/75 hover:text-[#1F3D2B]'
                 }`}
               >
                 {item.label}
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-[1.5px] rounded-full bg-[#49756B]" />
+                  <span className="absolute bottom-0 left-0 right-0 h-[1.5px] rounded-full bg-[#1F3D2B]" />
                 )}
               </button>
             );
@@ -85,7 +99,7 @@ export const Navigation: React.FC<NavigationProps> = ({
         <div className="flex items-center md:hidden">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-md hover:bg-[#ACC7B8]/25 text-[#49756B] transition-colors cursor-pointer"
+            className="p-2 rounded-md hover:bg-[#1F3D2B]/10 text-[#1F3D2B] transition-colors cursor-pointer"
             aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -95,13 +109,13 @@ export const Navigation: React.FC<NavigationProps> = ({
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden px-6 py-6 border-t bg-[#F0F5F0] border-[#ACC7B8] text-[#49756B]">
+        <div className="md:hidden px-6 py-6 border-t bg-gradient-to-b from-[#FAF6EE] to-[#F5EFE4] border-[#1F3D2B]/15 text-[#1F3D2B]">
           <div className="flex flex-col gap-4">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleItemClick(item)}
-                className="text-left text-lg font-serif py-1 text-[#49756B] hover:underline transition-all"
+                className="text-left text-lg font-serif py-1 text-[#1F3D2B] hover:underline transition-all"
               >
                 {item.label}
               </button>

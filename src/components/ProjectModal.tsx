@@ -250,16 +250,15 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
       role="dialog"
       aria-modal="true"
       aria-label={`${project.title} PDF Portfolio`}
-      className="fixed inset-0 z-[100000] w-screen h-screen bg-[#F0F5F0] overflow-hidden flex flex-col items-center justify-center m-0 p-0 select-none"
+      className="fixed inset-0 z-[100000] w-screen h-screen bg-gradient-to-b from-[#FAF6EE] via-[#F5EFE4] to-[#EDE3D2] overflow-hidden flex flex-col items-center justify-center m-0 p-0 select-none"
     >
       {/* 
         Close Button:
         Fixed at top right over the scrollable document.
-        Styled with approved palette (#49756B, #F0F5F0, #ACC7B8).
       */}
       <button
         onClick={onClose}
-        className="fixed top-4 right-4 sm:top-6 sm:right-6 z-[100002] p-2.5 sm:p-3 rounded-full bg-[#F0F5F0]/95 hover:bg-[#ACC7B8] text-[#49756B] border border-[#ACC7B8] shadow-2xl backdrop-blur-md transition-all duration-200 hover:scale-110 active:scale-95 cursor-pointer flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-[#49756B]"
+        className="fixed top-4 right-4 sm:top-6 sm:right-6 z-[100002] p-2.5 sm:p-3 rounded-full bg-[#1F3D2B] hover:bg-[#295039] text-[#FAF6EE] shadow-2xl backdrop-blur-md transition-all duration-200 hover:scale-110 active:scale-95 cursor-pointer flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1F3D2B]"
         aria-label="Close PDF viewer"
       >
         <X className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
@@ -285,34 +284,34 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           ))
         ) : errorState === 'not_found' ? (
           <div className="flex-1 flex flex-col items-center justify-center text-center max-w-lg p-8 my-auto">
-            <div className="w-16 h-16 rounded-full bg-[#ACC7B8]/30 border border-[#ACC7B8] flex items-center justify-center text-[#49756B] mb-5">
+            <div className="w-16 h-16 rounded-full bg-[#1F3D2B]/10 border border-[#1F3D2B]/25 flex items-center justify-center text-[#1F3D2B] mb-5">
               <FileText className="w-8 h-8 stroke-[1.5]" />
             </div>
-            <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#49756B]/70 block mb-2 font-semibold">
+            <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#1F3D2B]/70 block mb-2 font-semibold">
               PDF Document Upload
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl text-[#49756B] font-normal mb-3">
+            <h3 className="font-serif text-2xl sm:text-3xl text-[#1F3D2B] font-normal mb-3">
               {project.title}
             </h3>
-            <p className="text-sm text-[#49756B]/85 font-light leading-relaxed mb-5">
+            <p className="text-sm text-[#1F3D2B]/85 font-light leading-relaxed mb-5">
               The portfolio document will display here once uploaded to the following path in your project:
             </p>
-            <div className="px-4 py-2.5 rounded-lg bg-[#ACC7B8]/25 border border-[#ACC7B8] text-xs font-mono text-[#49756B] mb-6 select-all font-semibold">
+            <div className="px-4 py-2.5 rounded-lg bg-[#1F3D2B]/10 border border-[#1F3D2B]/25 text-xs font-mono text-[#1F3D2B] mb-6 select-all font-semibold">
               /public/assets/work/{pdfFileName}
             </div>
-            <p className="text-xs text-[#49756B]/70 font-light">
+            <p className="text-xs text-[#1F3D2B]/70 font-light">
               Press the top right cross button or hit Esc to return.
             </p>
           </div>
         ) : errorState === 'error' ? (
           <div className="flex-1 flex flex-col items-center justify-center text-center max-w-md p-8 my-auto">
-            <div className="w-14 h-14 rounded-full bg-[#ACC7B8]/30 border border-[#ACC7B8] flex items-center justify-center text-[#49756B] mb-4">
-              <AlertCircle className="w-7 h-7 text-[#49756B]" />
+            <div className="w-14 h-14 rounded-full bg-[#1F3D2B]/10 border border-[#1F3D2B]/25 flex items-center justify-center text-[#1F3D2B] mb-4">
+              <AlertCircle className="w-7 h-7 text-[#1F3D2B]" />
             </div>
-            <h3 className="font-serif text-2xl text-[#49756B] font-normal mb-2">
+            <h3 className="font-serif text-2xl text-[#1F3D2B] font-normal mb-2">
               Unable to load document
             </h3>
-            <p className="text-xs text-[#49756B]/80 font-light leading-relaxed mb-4">
+            <p className="text-xs text-[#1F3D2B]/80 font-light leading-relaxed mb-4">
               Please ensure the PDF file in <span className="font-mono font-medium">/public/assets/work/{pdfFileName}</span> is a valid, non-empty PDF file.
             </p>
           </div>

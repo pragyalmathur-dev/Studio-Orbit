@@ -53,7 +53,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F0F5F0] text-[#49756B]">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#FAF6EE] via-[#F5EFE4] to-[#EDE3D2] text-[#1F3D2B]">
       {/* Precision Brand Cursor for Pointer Devices */}
       <CustomCursor />
 
@@ -65,7 +65,7 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <main className="main-container flex-1 bg-[#F0F5F0]">
+      <main className="main-container flex-1 bg-transparent">
         {currentPage === 'home' && (
           <HomePage
             onNavigate={navigateTo}

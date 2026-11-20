@@ -112,12 +112,12 @@ export const CustomCursor: React.FC = () => {
         }`}
       >
         {/* Subtle brand glow / halo */}
-        <span className="absolute -inset-1 rounded-full bg-[#49756B]/25 blur-[2px]" />
+        <span className="absolute -inset-1 rounded-full bg-[#1F3D2B]/25 blur-[2px]" />
 
         {/* Outer brand circle */}
-        <div className="relative w-2.5 h-2.5 rounded-full bg-[#F0F5F0] border border-[#49756B] shadow-[0_1px_4px_rgba(73,117,107,0.35)] flex items-center justify-center">
+        <div className="relative w-2.5 h-2.5 rounded-full bg-[#F5EFE4] border border-[#1F3D2B] shadow-[0_1px_4px_rgba(31,61,43,0.4)] flex items-center justify-center">
           {/* Inner green center dot */}
-          <span className="w-1 h-1 rounded-full bg-[#49756B]" />
+          <span className="w-1 h-1 rounded-full bg-[#1F3D2B]" />
         </div>
       </div>
     </div>
