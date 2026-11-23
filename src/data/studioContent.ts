@@ -1,5 +1,5 @@
 /**
- * Imprint Studio Content Configuration
+ * Studio Orbit Content Configuration
  * Focused positioning: Branding & Brand Transformation
  */
 
@@ -71,8 +71,8 @@ export interface HowWeWorkStep {
 }
 
 export const STUDIO_CONFIG = {
-  name: 'Imprint Studio',
-  legalName: 'Imprint Studio',
+  name: 'Studio Orbit',
+  legalName: 'Studio Orbit',
   tagline: 'A branding and brand transformation studio.',
   descriptor: 'A branding and brand transformation studio.',
   eyebrow: 'Branding & Brand Transformation',

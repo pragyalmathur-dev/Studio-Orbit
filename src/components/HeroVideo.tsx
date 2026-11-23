@@ -174,7 +174,7 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({
     <section
       ref={heroRef}
       id="hero"
-      aria-label="Imprint Studio hero presentation"
+      aria-label="Studio Orbit hero presentation"
       className="relative w-full min-h-[92vh] flex flex-col justify-center overflow-hidden bg-gradient-to-br from-[#F5EFE4] via-[#EDE3D0] to-[#E4D6BC]"
     >
       {/* BACKGROUND LAYER: HTML5 Video Element */}

@@ -54,16 +54,16 @@ export const Navigation: React.FC<NavigationProps> = ({
             onNavigate('home');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="flex items-center hover:opacity-85 transition-opacity text-left cursor-pointer shrink-0"
+          className="flex items-center hover:opacity-85 transition-opacity text-left cursor-pointer shrink-0 overflow-hidden h-12 sm:h-14"
           aria-label={`${STUDIO_CONFIG.name} Home`}
         >
           {!logoError ? (
             <img
-              src="/assets/aistudio/Imprint_Studio_Forest_Green_Logo_7260e622.png"
+              src="/assets/aistudio/Studio_Orbit_Forest_Green_Logo_0bc8b332.png"
               alt={STUDIO_CONFIG.name}
               referrerPolicy="no-referrer"
               onError={() => setLogoError(true)}
-              className="h-11 sm:h-14 w-auto object-contain mix-blend-multiply select-none"
+              className="h-[74px] sm:h-[92px] w-auto object-contain -ml-2 mix-blend-multiply select-none"
             />
           ) : (
             <span className="font-serif text-xl sm:text-2xl font-normal tracking-tight text-[#1F3D2B] whitespace-nowrap">

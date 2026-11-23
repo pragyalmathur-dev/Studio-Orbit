@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowUpRight, Mail, Phone } from 'lucide-react';
 import { STUDIO_CONFIG } from '../data/studioContent';
 
@@ -8,6 +8,8 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate, onNavigateSection }) => {
+  const [logoError, setLogoError] = useState(false);
+
   const handleNavClick = (target: string, isPage: boolean) => {
     if (isPage) {
       onNavigate('contact');
@@ -25,9 +27,21 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onNavigateSection })
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-16 border-b border-[#1F3D2B]/15">
           {/* Brand & Positioning */}
           <div className="md:col-span-5 space-y-4">
-            <h3 className="font-serif text-3xl text-[#1F3D2B] font-normal">
-              {STUDIO_CONFIG.name}
-            </h3>
+            <div className="flex items-center overflow-hidden h-12 sm:h-14">
+              {!logoError ? (
+                <img
+                  src="/assets/aistudio/Studio_Orbit_Forest_Green_Logo_0bc8b332.png"
+                  alt={STUDIO_CONFIG.name}
+                  referrerPolicy="no-referrer"
+                  onError={() => setLogoError(true)}
+                  className="h-[80px] sm:h-[96px] w-auto object-contain -ml-2 mix-blend-multiply select-none"
+                />
+              ) : (
+                <h3 className="font-serif text-3xl text-[#1F3D2B] font-normal">
+                  {STUDIO_CONFIG.name}
+                </h3>
+              )}
+            </div>
             <p className="text-sm text-[#1F3D2B]/85 font-light max-w-md leading-relaxed">
               A branding and brand transformation studio. We create brands with a clear identity and help established businesses evolve through strategy, design, and digital experiences.
             </p>

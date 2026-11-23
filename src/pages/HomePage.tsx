@@ -223,7 +223,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             About Us
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[2.65rem] text-[#1F3D2B] font-normal leading-[1.28] tracking-tight mb-10">
-            Imprint Studio is a design-forward creative studio focused on brand transformation, identity systems, and narrative motion design.
+            Studio Orbit is a design-forward creative studio focused on brand transformation, identity systems, and narrative motion design.
           </h2>
           <div className="w-16 h-px bg-[#1F3D2B]/30 mb-10" />
           <div className="space-y-6 text-lg sm:text-xl text-[#1F3D2B]/90 font-light leading-relaxed">

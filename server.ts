@@ -70,7 +70,7 @@ async function startServer() {
   });
 
   app.get('/api/health', (req, res) => {
-    res.json({ status: 'active', studio: 'Imprint Studio' });
+    res.json({ status: 'active', studio: 'Studio Orbit' });
   });
 
   // Serve public assets explicitly
